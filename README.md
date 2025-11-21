@@ -1,26 +1,27 @@
 ﻿# Contacts-Application
 
-##About
+## About
 This is a simple Android app demonstrating how to display a list of contacts using RecyclerView, ViewHolder, and custom list item layouts in Kotlin.
 
-##Features
-Displays a list of contacts (name + phone number)
-Implements RecyclerView for efficient scrolling
-Uses a custom XML layout for each contact item
-Clean separation using Adapter and ViewHolder
-Beginner-friendly structure and easy to extend
+## Features
+- Displays a list of contacts (name + phone number)<br>
+Implements RecyclerView for efficient scrolling<br>
+Uses a custom XML layout for each contact item<br>
+Clean separation using Adapter and ViewHolder<br>
+Beginner-friendly structure and easy to extend<br>
 
-##Technologies Used
-Kotlin
-RecyclerView
-Android Studio
-XML Layouts
+## Technologies Used
+Kotlin<br>
+RecyclerView<br>
+Android Studio<br>
+XML Layouts<br>
 
-#Future Improvements (Optional)
-Add profile pictures
-Add edit/delete functionality
-Add search functionality
-Improve UI with colors
+# Future Improvements 
+Add profile pictures<br>
+Add edit/delete functionality<br>
+Add search functionality<br>
+Improve UI with colors<br>
 
-#Demo Pictures
-Image of the contacts page: <img width="173" height="380" alt="image" src="https://github.com/user-attachments/assets/ed0fe37a-257f-466e-a866-65cdfd64b486" />
+# Demo Pictures
+Image of the current contacts page:<br> <img width="173" height="380" alt="image" src="https://github.com/user-attachments/assets/ed0fe37a-257f-466e-a866-65cdfd64b486" />
+
