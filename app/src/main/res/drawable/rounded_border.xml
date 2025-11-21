@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Border color -->
+    <stroke
+        android:width="1dp"
+        android:color="#3C4142"/>
+
+    <!-- Corner radius -->
+    <corners android:radius="25dp"/>
+
+    <!-- Background color inside -->
+    <solid android:color="#3C4142"/> <!-- White background -->
+    <!--
+    <stroke> → sets the border thickness and color.
+    <corners> → makes the edges curvy.
+    <solid> → optional, sets the background inside the border.
+    -->
+</shape>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/rounded_border"
+    android:layout_margin="15dp">
+
+    <TextView
+        android:id="@+id/person_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"
+        />
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:padding="1dp"/>
+</LinearLayout><!--This means display them from top to bottom-->
+    <!--
+    android:id="@+id/person_name" and android:id="@+id/phone_number" :We give the TextViews IDs to
+    uniquely identify them so that we can use them in MainActivity.kt
+    -->
+
+    <!--For every width and height here, u'll notice I'm not giving them a static height or width.
+    This is intentional. Different phones come in different sizes, if you give them a static
+    measurements, they might look nice for some and terrible for others. So we do the following:
+    1. match_parent
+    This means that the View should expand to fill all available space inside its parent.From the
+    code: android:layout_width="match_parent" means: “Stretch the TextView as wide as the parent row.”
+    This makes it take the whole width of the screen. You want this because list items usually take
+    the full width of the screen. If you set a fixed width, it would look terrible on different screens.
+
+    2. wrap_content
+    This means occupy the space of the content inside you. From the code: android:layout_height=
+    "wrap_content", you are saying, "make the height just enough to fit the text"
+
+    This xml forms the template for every list item in the list. Go to activity_main.xml to understand
+    recyclerViews and how this will be used-->

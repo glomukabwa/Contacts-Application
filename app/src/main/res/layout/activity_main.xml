@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#000000">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact list"
+            android:textSize="40sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <!--Giving the recycler view a height of 0 and a weight of 1 makes it a stretchy container that takes all the remaining space
+    Basically, u're are taking away all the control from height and giving it to weight-->
+</LinearLayout>
+
+
+<!--Recycler Views are used to form lists. The code in item_contact.xml forms the template of every
+list item of the list. To display a long list, Recycler View reuses that template over and over again
+until the list is complete.
+Example: If you have a list of 20 and a screen that can only display 10, Recycler View does not
+create the row layout(using the template eg item_contact.xml) for all 20, it just creates the first
+10. Then when the first row has scrolled beyond view, it takes its row layout and uses it for the
+11th item. That's why it's called Recycler, it recycles.-->
+
+<!--
+androidx.recyclerview.widget.RecyclerView : This part of the code basically says,"Create a scrollable
+area on the screen
+android:id="@+id/recyclerView" : We give it an ID to uniquely identify it so that we can use it in
+MainActivity.kt
+android:layout_width="match_parent" and android:layout_height="match_parent": We want the application
+to cover the whole screen so we use match_parent for both height and width
+-->
